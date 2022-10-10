@@ -1,3 +1,5 @@
+# Domain
+
 # Notes
 
 **Labels**  
@@ -21,8 +23,9 @@ what steps do I have to take to exit the car park?
 
 Nav: Luis
 Driver: Nathan
-create a Backlog.md file
-create a techdebt.md file
-write our domain and entities
+✅create a Backlog.md file
+✅create a techdebt.md file
+🚧write our domain and entities
 move notes content to backlog
-TEST a single scenario where there is one floor and the expected result its [right]
+TEST a single scenario where there is one floor and the expected result its [rignd te
+git pu
