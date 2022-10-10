@@ -1,4 +1,4 @@
-# Notes
+t# Notes
 
 **Labels**  
 ✅ done  
@@ -15,15 +15,11 @@ TODO:
 N: D
 D: N
 
-Given we are in a car park
-and it has only one parking space, and the exit is to the right from the parking space
-what steps do I have to take to exit the car park?
-
 Nav: Luis
 Driver: Nathan
 ✅create a Backlog.md file
 ✅create a techdebt.md file
-🚧write our domain and entities
-move notes content to backlog
-TEST a single scenario where there is one floor and the expected result its [rignd te
-git pu
+✅ write our domain and entities
+✅ move notes content to backlog
+✅TEST a single scenario where there is one floor and the expected result its [right]
+git push
