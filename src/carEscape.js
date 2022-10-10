@@ -1,5 +1,5 @@
 const carEscape = () => {
-  return 10;
+  return ["right"];
 };
 
 module.exports = carEscape;
