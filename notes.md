@@ -21,5 +21,11 @@ Driver: Nathan
 ✅create a techdebt.md file
 ✅ write our domain and entities
 ✅ move notes content to backlog
-✅TEST a single scenario where there is one floor and the expected result its [right]
-git push
+✅TEST a single scenario where there is one floor and the ✅expected result its [right]
+✅git push
+
+## Pomodoro 2
+
+update domain with exception handling
+a ground floor, starting position is 2 spaces from the exit
+Pass the parking lot structure
