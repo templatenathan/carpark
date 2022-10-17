@@ -29,3 +29,11 @@ Driver: Nathan
 update domain with exception handling
 a ground floor, starting position is 2 spaces from the exit
 Pass the parking lot structure
+
+#1 5 min D: Nathan, N: Drag
+
+🚧 1. fix broken test for 2 spaces where input is false, false, true
+
+2. improve tests by marking the parked space
+
+3.
