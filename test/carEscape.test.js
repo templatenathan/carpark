@@ -16,4 +16,15 @@ describe("carEscape", () => {
       carEscape(startingFloor, startingPosition, [[false, false, true]])
     ).toStrictEqual(["right", "right", "right"]);
   });
+
+  it("when we have 2 stories car park and we are parked on the first floor, parked one space from the stairwell", () => {
+    const startingPosition = 0;
+    const startingFloor = 0;
+    expect(
+      carEscape(startingFloor, startingPosition, [
+        [false, true], // floor 1, array position 0
+        [false, true], // floor 0, array position 1
+      ])
+    ).toStrictEqual(["right", "down", "right"]);
+  });
 });

@@ -15,7 +15,16 @@ Car Park
 - has multiple parking spaces
 - has one Stairwell, unless ground floor
 - ground floor has one exit
-- a car park that has only one space per floor, and more than one floor is invalid, because the starting position cannot be on a stairwell
+
+Level
+
+- can be multiple levels in a car park
+- either has a stairwell in any location when above the ground floor, or an exit on the far right if ground floor
+
+Parking Position
+
+- starting position is the space index on a floor
+- starting floor is the index of starting floor where car is parked
 
   Moves
 

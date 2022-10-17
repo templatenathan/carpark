@@ -35,4 +35,12 @@ Pass the parking lot structure
 ✅ 1. fix broken test for 2 spaces where input is false, false, true
 
 3x
-🚧 2. improve tests by marking the parked space
+✅ 2. improve tests by marking the parked space
+
+3. one floor, but
+
+❌3. 2 floors car park, floor 1 starting, startingPosition 3 out of 5
+
+4x
+
+5x 4. 2 floors car park, floor 1 starting, starting position is 0 out of 1
