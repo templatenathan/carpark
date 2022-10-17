@@ -1,6 +1,6 @@
-const carEscape = (levels) => {
+const carEscape = (startingFloor, startingPosition, levels) => {
   const output = [];
-  for (let i = 0; i < levels[0].length - 1; i++) {
+  for (let i = startingPosition; i < levels[startingFloor].length - 1; i++) {
     output.push("right");
   }
   return output;

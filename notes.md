@@ -32,8 +32,7 @@ Pass the parking lot structure
 
 #1 5 min D: Nathan, N: Drag
 
-🚧 1. fix broken test for 2 spaces where input is false, false, true
+✅ 1. fix broken test for 2 spaces where input is false, false, true
 
-2. improve tests by marking the parked space
-
-3.
+3x
+🚧 2. improve tests by marking the parked space
