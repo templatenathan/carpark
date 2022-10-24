@@ -4,6 +4,7 @@ const carEscape = (startingFloor, startingPosition, levels) => {
     for (let i = startingPosition; i < levels[currentFloor].length; i++) {
       if (currentFloor !== 0 && levels[currentFloor][i] === true) {
         output.push("down");
+        startingPosition = i;
       } else if (currentFloor === 0 && levels[currentFloor][i] === true) {
         output.push("right");
       } else {

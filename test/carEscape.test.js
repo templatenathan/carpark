@@ -19,7 +19,7 @@ describe("carEscape", () => {
 
   it("when we have 2 stories car park and we are parked on the first floor, parked one space from the stairwell", () => {
     const startingPosition = 0;
-    const startingFloor = 0;
+    const startingFloor = 1;
     expect(
       carEscape(startingFloor, startingPosition, [
         [false, true], // floor 1, array position 0

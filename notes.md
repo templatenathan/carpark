@@ -44,3 +44,24 @@ Pass the parking lot structure
 4x
 
 5x 4. 2 floors car park, floor 1 starting, starting position is 0 out of 1
+
+Pomodoro 3
+Two stories car park, each story two spaces
+Any size floor
+push for stairs are anywhere
+
+<!-- [X 1 1 0 1]
+[1 1 1 1 E] -->
+
+DN ND -
+DR NN -
+DD NR
+DN ND
+DR NN
+
+Todo:
+
+✅ 1. fix current test and have 100% coverage 2. write a test and functionality for: 2 floors car park, 5 parking spaces each, starting point: 1:5
+1 2 3 4 5
+Floor 1 [false true false false false]
+Floor 0 [false false false false true]
