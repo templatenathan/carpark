@@ -18,12 +18,12 @@ Car Park
 
 Level
 
-- can be multiple levels in a car park
+- can be multiple levels in a car park, from 1 to x
 - either has a stairwell in any location when above the ground floor, or an exit on the far right if ground floor
 
 Parking Position
 
-- starting position is the space index on a floor
+- starting position is the space number on a floor, from 1 to x
 - starting floor is the index of starting floor where car is parked
 
   Moves

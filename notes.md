@@ -55,13 +55,17 @@ push for stairs are anywhere
 
 DN ND -
 DR NN -
-DD NR
-DN ND
-DR NN
+DD NR -
+DN ND -
+DR NN -
+DR ND -
+DN NR -
+DD NN
 
 Todo:
 
-✅ 1. fix current test and have 100% coverage 2. write a test and functionality for: 2 floors car park, 5 parking spaces each, starting point: 1:5
+✅ 1. fix current test and have 100% coverage
+❌ 2. write a test and functionality for: 2 floors car park, 5 parking spaces each, starting point: 1:5
 1 2 3 4 5
 Floor 1 [false true false false false]
 Floor 0 [false false false false true]

@@ -1,16 +1,17 @@
 const carEscape = (startingFloor, startingPosition, levels) => {
+  let floorIndex = levels.length - startingFloor;
+  let positionIndex = startingPosition - 1;
   const output = [];
-  for (let currentFloor = startingFloor; currentFloor >= 0; currentFloor--) {
-    for (let i = startingPosition; i < levels[currentFloor].length; i++) {
-      if (currentFloor !== 0 && levels[currentFloor][i] === true) {
-        output.push("down");
-        startingPosition = i;
-      } else if (currentFloor === 0 && levels[currentFloor][i] === true) {
-        output.push("right");
-      } else {
-        output.push("right");
-      }
+  for (floorIndex; floorIndex < levels.length; floorIndex++) {
+    const exitIndex = levels[floorIndex].findIndex((space) => space === true);
+    const direction = exitIndex > positionIndex ? "right" : "left";
+    const moves = Math.abs(exitIndex - positionIndex);
+    for (let i = 0; i < moves; i++) {
+      output.push(direction);
     }
+    const isGroundFloor = floorIndex === levels.length - 1;
+    output.push(isGroundFloor ? "right" : "down");
+    positionIndex = exitIndex;
   }
 
   return output;
