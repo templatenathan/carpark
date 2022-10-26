@@ -46,4 +46,24 @@ describe("carEscape", () => {
       "right",
     ]);
   });
+
+  test("should escape when there are three levels and the stairwell spans two floors", () => {
+    const startingPosition = 1;
+    const startingFloor = 3;
+    expect(
+      carEscape(startingFloor, startingPosition, [
+        [false, true, false, false, false], // floor 3
+        [false, true, false, false, false], // floor 2
+        [false, false, false, false, true], // floor 1
+      ])
+    ).toStrictEqual([
+      "right",
+      "down",
+      "down",
+      "right",
+      "right",
+      "right",
+      "right",
+    ]);
+  });
 });
