@@ -74,8 +74,27 @@ driver navigator
 N R
 R D
 D N
+===
+N D
+R N
 
 ## Pomodoro 3
 
 ✅ TODO Rename the output variable name into exitInstructions
-use a function to get directon, number of moves, and putting moves into the exitInstructions
+✅ use a function to get directon, number of moves, and putting moves into the exitInstructions
+
+Pomodoro #5
+
+🚧 Write tests for helper functions and move helper functions on separate file:
+✅ create helper.js
+✅ write tests for getDirections
+
+✅ GIVEN car park
+WHEN exit index is more than position index
+THEN function returns "right"
+
+GIVEN car park
+WHEN exit index is less than position index
+THEN function returns "left"
+
+✅move getDirections into helper.js
