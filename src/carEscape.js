@@ -1,5 +1,4 @@
-const getDirection = (exitIndex, positionIndex) =>
-  exitIndex > positionIndex ? "right" : "left";
+const { getDirection } = require("./helper.js");
 
 const getExitMove = (floorIndex, numberLevels) => {
   const isGroundFloor = floorIndex === numberLevels - 1;
@@ -7,7 +6,7 @@ const getExitMove = (floorIndex, numberLevels) => {
 };
 
 const moveToExit = (exitIndex, positionIndex, exitInstructions) => {
-  const direction = getDirection(exitIndex, positionIndex);
+  const direction = getDirection(positionIndex, exitIndex);
   const moves = Math.abs(exitIndex - positionIndex);
   for (let i = 0; i < moves; i++) {
     exitInstructions.push(direction);

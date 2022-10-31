@@ -98,3 +98,7 @@ WHEN exit index is less than position index
 THEN function returns "left"
 
 ✅move getDirections into helper.js
+
+=======
+Navigator: Dragomir, Driver Rolando
+🚧 # replace getDirection in carEscape with import
