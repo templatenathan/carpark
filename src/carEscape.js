@@ -5,9 +5,9 @@ const getExitMove = (floorIndex, numberLevels) => {
   return isGroundFloor ? "right" : "down";
 };
 
-const moveToExit = (exitIndex, positionIndex, exitInstructions) => {
-  const direction = getDirection(positionIndex, exitIndex);
-  const moves = Math.abs(exitIndex - positionIndex);
+const moveToExit = (exitIndex, startIndex, exitInstructions) => {
+  const direction = getDirection(startIndex, exitIndex);
+  const moves = Math.abs(exitIndex - startIndex);
   for (let i = 0; i < moves; i++) {
     exitInstructions.push(direction);
   }

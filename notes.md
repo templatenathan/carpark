@@ -97,8 +97,12 @@ GIVEN car park
 WHEN exit index is less than position index
 THEN function returns "left"
 
-✅move getDirections into helper.js
+✅ move getDirections into helper.js
 
 =======
 Navigator: Dragomir, Driver Rolando
-🚧 # replace getDirection in carEscape with import
+✅ # replace getDirection in carEscape with import
+
+✅ # in moveToExit, getDirection - positionIndex - rename to startIndex
+
+#
