@@ -20,3 +20,4 @@ exit 1,0
 
 function exit seeker
 function position updater & record moves
+use a function to get directon, number of moves, and putting moves into the exitInstructions

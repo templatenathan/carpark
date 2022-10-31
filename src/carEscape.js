@@ -1,20 +1,31 @@
+const getDirection = (exitIndex, positionIndex) =>
+  exitIndex > positionIndex ? "right" : "left";
+
+const getExitMove = (floorIndex, numberLevels) => {
+  const isGroundFloor = floorIndex === numberLevels - 1;
+  return isGroundFloor ? "right" : "down";
+};
+
+const moveToExit = (exitIndex, positionIndex, exitInstructions) => {
+  const direction = getDirection(exitIndex, positionIndex);
+  const moves = Math.abs(exitIndex - positionIndex);
+  for (let i = 0; i < moves; i++) {
+    exitInstructions.push(direction);
+  }
+};
+
 const carEscape = (startingFloor, startingPosition, levels) => {
   let floorIndex = levels.length - startingFloor;
   let positionIndex = startingPosition - 1;
-  const output = [];
+  const exitInstructions = [];
   for (floorIndex; floorIndex < levels.length; floorIndex++) {
     const exitIndex = levels[floorIndex].findIndex((space) => space === true);
-    const direction = exitIndex > positionIndex ? "right" : "left";
-    const moves = Math.abs(exitIndex - positionIndex);
-    for (let i = 0; i < moves; i++) {
-      output.push(direction);
-    }
-    const isGroundFloor = floorIndex === levels.length - 1;
-    output.push(isGroundFloor ? "right" : "down");
+    moveToExit(exitIndex, positionIndex, exitInstructions);
+    exitInstructions.push(getExitMove(floorIndex, levels.length));
     positionIndex = exitIndex;
   }
 
-  return output;
+  return exitInstructions;
 };
 
 module.exports = carEscape;

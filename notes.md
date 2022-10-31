@@ -69,3 +69,13 @@ Todo:
 1 2 3 4 5
 Floor 1 [false true false false false]
 Floor 0 [false false false false true]
+
+driver navigator
+N R
+R D
+D N
+
+## Pomodoro 3
+
+✅ TODO Rename the output variable name into exitInstructions
+use a function to get directon, number of moves, and putting moves into the exitInstructions
